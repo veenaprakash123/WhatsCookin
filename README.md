@@ -48,3 +48,8 @@ Technology Used:
 -	Mongoose
 -	Node
 
+Wireframes: 
+
+<img width="948" alt="Screen Shot 2022-03-16 at 6 18 17 PM" src="https://user-images.githubusercontent.com/91581821/158719034-3e93392b-5c96-4889-90e8-76e822220945.png">
+
+
