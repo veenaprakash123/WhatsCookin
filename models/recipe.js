@@ -4,11 +4,11 @@ const recipeSchema = new mongoose.Schema({
     meal:{type: String, required: true},
     ingredients:{type: Array, required: true},
     instructions:{type: String}, 
-    owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }
-,})
+    // owner: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'User'
+    // }
+})
 
 const Recipe = mongoose.model("Recipe", recipeSchema);
 module.exports = Recipe;
