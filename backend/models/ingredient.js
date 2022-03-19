@@ -5,10 +5,10 @@ const ingredientSchema = new mongoose.Schema({
     amount:{type: String},
     location:{type: String},
     image: {type: String},
-    owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }
+    // owner: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'User'
+    // }
 })
 
 const Ingredient = mongoose.model("Ingredient", ingredientSchema);

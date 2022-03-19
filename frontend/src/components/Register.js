@@ -56,6 +56,7 @@ const Register = () => {
 
   return (
     <div>
+      <h1>Register</h1>
       <Form onSubmit={handleSubmit} method="POST">
 
 
@@ -82,8 +83,6 @@ const Register = () => {
           <Form.Label className="label">Confirm Password:</Form.Label>
           <Form.Control type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" onChange={handleChange}></Form.Control>
         </Form.Group>
-       
-       
        
 
           <Button size="lg" className="register-button" value="Register" type="submit" variant="dark">Register</Button>

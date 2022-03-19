@@ -28,7 +28,7 @@ const Login = () => {
         let handleSubmit = (e) =>{
             e.preventDefault()
     
-            fetch('http://localhost:7200/session/login', {
+            fetch('http://localhost:4000/session/login', {
               method: "POST", 
               body: JSON.stringify(loggedInUser),
               headers: {
