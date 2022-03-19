@@ -6,23 +6,21 @@ Ingredient.deleteMany({})
     return Ingredient.insertMany([
         {
             "name": 'pear',
-            "image": 'pic of apple',
+            "amount": '3',
             "location": 'fruit basket',
-            "amount": '3'
+            "image": 'pic of apple',
         },
         {
             "name": 'pasta',
-            "image": 'pic of pasta',
+            "amount": '2 boxes',
             "location": 'pantry',
-            "amount": '2 boxes'
-
+            "image": 'pic of pasta',
         },
         {
             "name": 'tomato',
-            "image": 'pic of tomato',
+            "amount": '7',
             "location": 'fridge',
-            "amount": '7'
-
+            "image": 'pic of tomato',
         },
 
     ])
