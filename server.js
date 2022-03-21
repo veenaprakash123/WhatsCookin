@@ -11,6 +11,8 @@ const sessionController = require('./controllers/session')
 app.use(cors())
 app.use(bodyParser.json())
 
+app.use(express.urlencoded({extended:false}))
+
 app.use('/kitchen', ingredientController)
 app.use('/recipe', recipeController)
 app.use('/session', sessionController)

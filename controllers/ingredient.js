@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
     })
 })
 
+// View Details
 
 router.get('/details/:id', (req,res)=> {
     Ingredient.findById(req.params.id, (error, ingredient) => {
@@ -25,7 +26,7 @@ router.get('/details/:id', (req,res)=> {
 
 // Add Ingredient
 
-router.post('/', (req, res, next) => {
+router.post('/', (req, res) => {
     Ingredient.create(req.body, (error, newIngredient) => {
         console.log(req.body)
         if(error){
