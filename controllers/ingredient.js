@@ -27,12 +27,12 @@ router.get('/details/:id', (req,res)=> {
 // Add Ingredient
 
 router.post('/', (req, res) => {
-    Ingredient.create(req.body, (error, newIngredient) => {
+    Ingredient.create(req.body, (error, newIng) => {
         console.log(req.body)
         if(error){
             res.status(400).json({error: error.message})
         }
-        res.status(200).json(newIngredient)
+        res.status(200).json(newIng)
     })
 })
 
@@ -44,11 +44,30 @@ router.put('/edit/:id', (req,res) => {
         if(error){
             res.status(400).json({error: error.message})
             console.log(error)
+            return
         }
         console.log(updatedIngredient)
         res.status(200).json(updatedIngredient)
     })
 })
+
+
+// Delete Ingredient
+
+router.delete('/details/:id', (req, res) => {
+    Ingredient.findByIdAndDelete(req.params.id,(error, ing)=>{
+        if (error) {
+            res.status(400).json({ error: error.message })
+            return
+          }
+          Ingredient.find({}, (error, remainingEntries) => {
+            
+            res.status(200).json(remainingEntries)
+
+        })
+    })
+}) 
+
 
 
 
