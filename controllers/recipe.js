@@ -12,6 +12,8 @@ router.get('/', (req, res)=>{
     })
 })
 
+// View Recipe
+
 router.get('/:id', (req,res)=> {
     Recipe.findById(req.params.id, (error, recipeFound) =>{
         if(error) {
@@ -22,8 +24,33 @@ router.get('/:id', (req,res)=> {
     })
 })
 
+// Add Recipe
+
+router.post('/', (req, res)=> {
+    Recipe.create(req.body, (error, newRecipe) =>{
+        if (error){
+            res.status(400).json({error: error.message})
+        }
+        res.status(200).json(newIng)
+    })
+})
 
 
+// Delete Recipe
+
+router.delete('/details/:id', (req, res) => {
+    Recipe.findByIdAndDelete(req.params.id,(error, rec)=>{
+        if (error) {
+            res.status(400).json({ error: error.message })
+            return
+          }
+          Ingredient.find({}, (error, remainingRecipes) => {
+            
+            res.status(200).json(remainingRecipes)
+
+        })
+    })
+}) 
 
 
 module.exports = router
