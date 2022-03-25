@@ -27,11 +27,13 @@ router.get('/:id', (req,res)=> {
 // Add Recipe
 
 router.post('/', (req, res)=> {
+    console.log(req.body)
     Recipe.create(req.body, (error, newRecipe) =>{
         if (error){
             res.status(400).json({error: error.message})
         }
-        res.status(200).json(newIng)
+        res.status(200).json(newRecipe)
+        console.log(newRecipe)
     })
 })
 
@@ -44,7 +46,7 @@ router.delete('/details/:id', (req, res) => {
             res.status(400).json({ error: error.message })
             return
           }
-          Ingredient.find({}, (error, remainingRecipes) => {
+          Recipe.find({}, (error, remainingRecipes) => {
             
             res.status(200).json(remainingRecipes)
 
