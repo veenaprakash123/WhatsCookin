@@ -56,7 +56,7 @@ router.put('/edit/:id', (req,res) => {
 // Delete Recipe
 
 router.delete('/details/:id', (req, res) => {
-    Recipe.findByIdAndDelete(req.params.id,(error, rec)=>{
+    Recipe.findByIdAndDelete(req.params.id,(error, deletedRecipe)=>{
         if (error) {
             res.status(400).json({ error: error.message })
             return
