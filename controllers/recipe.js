@@ -37,6 +37,21 @@ router.post('/', (req, res)=> {
     })
 })
 
+// Update Recipe
+
+router.put('/edit/:id', (req,res) => {
+    Recipe.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updatedRecipe) => {
+        if(error){
+            res.status(400).json({error: error.message})
+            console.log(error)
+            return
+        }
+        console.log(updatedRecipe)
+        res.status(200).json(updatedRecipe)
+    })
+}) 
+
+
 
 // Delete Recipe
 
