@@ -8,7 +8,7 @@ Ingredient.deleteMany({})
             "name": 'pear',
             "amount": '3',
             "location": 'fridge',
-            "image": 'pic of pear',
+            "image": 'https://images.albertsons-media.com/is/image/ABS/184120177?$ecom-pdp-desktop$&defaultImage=Not_Available',
         },
         {
             "name": 'pasta',
@@ -20,7 +20,7 @@ Ingredient.deleteMany({})
             "name": 'tomato',
             "amount": '7',
             "location": 'fridge',
-            "image": 'pic of tomato',
+            "image": 'https://media.istockphoto.com/photos/tomato-isolated-on-white-background-picture-id466175630?k=6&m=466175630&s=612x612&w=0&h=fu_mQBjGJZIliOWwCR0Vf2myRvKWyQDsymxEIi8tZ38=',
         },
         {
             "name": 'salt',
