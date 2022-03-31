@@ -4,6 +4,7 @@ const Ingredient = require('../models/ingredient')
 Ingredient.deleteMany({})
 .then(() => {
     return Ingredient.insertMany([
+
         {
             "name": 'pear',
             "amount": '3',
@@ -74,6 +75,6 @@ Ingredient.deleteMany({})
     ])
 })
 .then(data => console.log(data))
-.catch(err => console.log(err))
-.finally(() => process.exit)
+.then(err => console.log(err))
+.finally(()=> process.exit)
 
