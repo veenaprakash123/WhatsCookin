@@ -71,7 +71,6 @@ Ingredient.deleteMany({})
             "location": 'fridge',
             "image": 'https://www.theblackpeppercorn.com/wp-content/uploads/2013/03/golden-kiwi-4x3a.jpg',
         }
-
     ])
 })
 .then(data => console.log(data))
