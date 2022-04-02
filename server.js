@@ -2,7 +2,8 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-PORT = 4000
+// PORT = 4000
+app.set('port', process.env.PORT || 4000)
 const SESSION_SECRET= process.env.SESSION_SECRET
 const cors = require('cors')
 const bodyParser = require('body-parser')
@@ -27,7 +28,7 @@ app.use('/recipe', recipeController)
 app.use('/session', sessionController)
 
 
-app.listen(PORT, () => {
-    console.log('WhatsCookin is running on port', PORT)
+app.listen(app.get('port'), () => {
+    console.log(`WhatsCookin is running on port, ${app.get('port')}`)
 })
 
