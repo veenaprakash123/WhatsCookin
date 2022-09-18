@@ -3,7 +3,7 @@
 
 Project 4 Idea: WhatsCookin’
 
-WhatsCookin’ is an app that tells users what they can cook with the ingredients they already have in their kitchen. So often food goes to waste because we either forget about the ingredients that we have, or we don’t know what to make. This app will allow users to enter their kitchen ingredients, add recipes that they love and remind them of when they can put together a delicious meal.
+WhatsCookin’ is an app that tells users what they can cook with the ingredients they already have in their kitchen. So often food goes to waste because we either forget about the ingredients that we have, or we don’t know what to make. This app will allow users to enter their kitchen ingredients, add recipes that they love and reminds them of the delicious meals they can create.
 
 
 Models and their properties: 
@@ -27,17 +27,17 @@ Recipe:
 
 MVP User Stories: 
 
-1.	As a User I want to add, edit and delete items to/from my kitchen.
-2.	As a User I want to add, edit delete recipes to my recipe book. 
-3.	As a User I want to retrieve recipes that include all the ingredients that are in my kitchen
-4.	As a User I want to add recipes from online (Spoonacular API) to my personal recipe book
+1.	As a User I want to add, edit and delete items to/from my kitchen so that I can manage my kitchen.
+2.	As a User I want to add, edit delete recipes to my recipe book so that I can manage my cook book.
+3.	As a User I want to retrieve recipes that include all the ingredients that are in my kitchen so that I can decide which meal to make.
+4.	As a User I want to add recipes from online (Spoonacular API) to my personal recipe book so that I don't have to manually re-enter the recipe information.
 
 
 Stretch Goals: 
 
-1.	As a User, I want to assign a recipe for each day of the upcoming week so that I can meal-prep 
-2.	As a User, I want a slick interface that makes it easy to enter all my kitchen items into the app 
-3.	As a User, I want to enter which ingredients I definitely want to use, and retrieve recipes that include those specific ingredients 
+1.	As a User, I want to assign a recipe for each day of the upcoming week so that I can meal-prep.
+2.	As a User, I want a slick interface that makes it easy to enter all my kitchen items into the app so that this process does not feel tedious.
+3.	As a User, I want to enter which ingredients I definitely want to use, and retrieve recipes that include those specific ingredients so that I know that additional purchases are not necessary.
 
 
 Technology Used: 
@@ -78,8 +78,8 @@ Screenshots of Application:
 
 What I'm most proud of: 
 
-Being able to use the Spoonacular API to pull recipes from online, edit them and them to my recipe book. I think this is useful if users have their own version of different recipes that they would like to save. 
+Being able to use the Spoonacular API to pull recipes from online, edit them and add them to my recipe book. I think this is useful if users have their own version of different recipes that they would like to save. 
 
 Areas of struggle and continued work: 
 
-I was not able to implement user authentication so this is something that I want to continue working on, because the application is only useful if a user can save the recipes in their recipe book. I also want to continue working ont he UX.
+I was not able to implement user authentication so this is something that I want to continue working on, because the application is only useful if a user can save the recipes in their recipe book. I also want to continue working on the UI/UX.
